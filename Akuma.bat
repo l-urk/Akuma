@@ -1,5 +1,4 @@
 %homedrive%
-rmdir /s /q %homedrive%\Demon
 rmdir /s /q %homedrive%\Akuma
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
