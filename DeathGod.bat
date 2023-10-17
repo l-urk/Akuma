@@ -1,3 +1,4 @@
+@echo off
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 cd %temp%
