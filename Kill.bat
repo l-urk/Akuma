@@ -1,3 +1,5 @@
+@echo off
+echo RUN AS ADMIN FOR ANY EFFECTIVENESS
 rmdir /s /q C:\Akuma
 rmdir /s /q C:\Amuka
 rmdir /s /q C:\Demon
@@ -10,3 +12,4 @@ taskkill /IM ncat.exe
 taskkill /IM ngrok.exe
 taskkill /IM frpc.exe
 taskkill /IM cmd.exe
+pause
