@@ -4,7 +4,5 @@ set "vbsFilePath=%homedrive%\Akuma\beyondbirthday.vbs"
 IF EXIST "%vbsFilePath%" (
     cscript "%vbsFilePath%"
 ) ELSE (
-    echo The specified VBScript file does not exist.
-    rem Add error handling or other actions here
+    exit
 )
-exit
