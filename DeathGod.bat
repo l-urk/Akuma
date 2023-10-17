@@ -17,7 +17,7 @@ powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Sta
 set "vbsFilePath=%homedrive%\Akuma\beyondbirthday.vbs"
 
 IF EXIST "%vbsFilePath%" (
-    start /B "" "%vbsFilePath%"
+    cscript "%vbsFilePath%"
 ) ELSE (
     echo The specified VBScript file does not exist.
     rem Add error handling or other actions here
