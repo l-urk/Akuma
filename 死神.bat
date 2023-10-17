@@ -7,3 +7,4 @@ IF EXIST "%vbsFilePath%" (
     echo The specified VBScript file does not exist.
     rem Add error handling or other actions here
 )
+exit
