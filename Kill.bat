@@ -10,6 +10,6 @@ echo y| del "%userprofile%\Start Menu\Programs\Startup\Win.lnk"
 echo y| del "%userprofile%\Start Menu\Programs\Startup\beyondbirthday.lnk"
 taskkill /IM ncat.exe
 taskkill /IM ngrok.exe
-taskkill /IM frpc.exe
+taskkill /IM chisel.exe
 taskkill /IM cmd.exe
 pause
