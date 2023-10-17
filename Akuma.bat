@@ -1,3 +1,4 @@
+@echo off
 echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma"
 %homedrive%
 rmdir /s /q %homedrive%\Akuma
