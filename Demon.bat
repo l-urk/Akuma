@@ -1,3 +1,4 @@
+@echo off
 rmdir /s /q %homedrive%\Demon
 mkdir %homedrive%\Demon
 attrib +h %homedrive%\Demon
