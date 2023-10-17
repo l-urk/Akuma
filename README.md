@@ -1,5 +1,5 @@
 # Akuma
-Initiate infection through by Akuma with
+Initiate infection through by Akuma with...
 # Demon
 Initiate infecion of Akuma without special factors (No Antivirus Exclusion; No Firewall Exclusion).
 # DeathGod 
