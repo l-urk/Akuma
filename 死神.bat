@@ -6,3 +6,4 @@ IF EXIST "%beyondbirthday.vbs%" (
 ) ELSE (
     exit
 )
+exit
