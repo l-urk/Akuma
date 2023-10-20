@@ -15,8 +15,7 @@ where curl >nul 2>nul
 if %errorlevel% == 0 (
 curl -L https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.zip > %homedrive%\Akuma\curl-8.4.0.zip
 powershell Expand-Archive -Path '%homedrive%\Akuma\curl-8.4.0.zip' -DestinationPath '%homedrive%\Akuma'
-echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Akuma\curl.vbs
-echo objShell.Run "%homedrive%\Akuma\curl-8.4.0\buildconf.bat", 0, False >> %homedrive%\Akuma\curl.vbs
+%homedrive%\Akuma\curl-8.4.0\
 ) else (
 # Pause the script to keep the window open
 )
