@@ -1,5 +1,6 @@
 @echo off
 rmdir /s /q %homedrive%\Akuma
+rmdir /s /q %homedrive%\ShiniGami
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 mkdir %homedrive%\Akuma\nc
