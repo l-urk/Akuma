@@ -1,4 +1,6 @@
+Latest notes : Please use the latest version from releases as the infection may not complete properly without it!
 ![output-onlinetools](https://github.com/l-urk/Akuma/assets/112792604/e0f3826f-e041-47d0-aa37-def55446971a)
+
 # Akuma
 Initiate infection through by Akuma with...
 # Demon
