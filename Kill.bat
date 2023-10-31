@@ -1,4 +1,5 @@
 @echo off
+for /l %%i in (1,1,2) do (
 echo THIS KILL FILE IS FOR AKUMA
 echo IT MUST BE RUN AS ADMIN FOR FULL EFFECTIVE KILL
 echo ...press enter to skip timer...
@@ -20,3 +21,4 @@ taskkill /IM nc.exe /F
 taskkill /IM chisel.exe /F
 timeout /t 3
 taskkill /IM cmd.exe /F
+)
