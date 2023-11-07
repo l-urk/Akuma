@@ -25,3 +25,4 @@ IF EXIST "%vbsFilePath%" (
 ) ELSE (
     exit
 )
+exit
